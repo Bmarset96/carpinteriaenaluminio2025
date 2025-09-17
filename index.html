@@ -30,13 +30,22 @@
       box-shadow: 0 2px 8px var(--sombra);
     }
 
+    .logo {
+      max-height: 40px;
+      width: auto;
+      margin-bottom: 0.5rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .floating-menu {
       position: fixed;
       top: 50%;
       right: 0;
       transform: translateY(-50%);
       background-color: var(--color-primario);
-      padding: 0.4rem;
+      padding: 0.6rem;
       border-radius: 8px 0 0 8px;
       box-shadow: -2px 2px 10px var(--sombra);
       z-index: 1000;
@@ -46,8 +55,8 @@
       display: block;
       color: var(--color-secundario);
       text-decoration: none;
-      margin: 0.3rem 0;
-      padding: 0.3rem 0.5rem;
+      margin: 0.4rem 0;
+      padding: 0.4rem 0.6rem;
       border-radius: 4px;
       font-size: 13px;
       transition: background 0.3s ease, transform 0.3s ease;
@@ -64,18 +73,26 @@
       left: 0;
       transform: translateY(-50%);
       background-color: #006699;
-      padding: 0.4rem;
+      padding: 0.6rem;
       border-radius: 0 8px 8px 0;
       box-shadow: 2px 2px 10px var(--sombra);
       z-index: 1000;
+    }
+
+    .right-menu h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--color-secundario);
+      margin-bottom: 0.5rem;
+      text-align: center;
     }
 
     .right-menu a {
       display: block;
       color: var(--color-secundario);
       text-decoration: none;
-      margin: 0.3rem 0;
-      padding: 0.3rem 0.5rem;
+      margin: 0.4rem 0;
+      padding: 0.4rem 0.6rem;
       border-radius: 4px;
       font-size: 13px;
       transition: background 0.3s ease, transform 0.3s ease;
@@ -84,6 +101,12 @@
     .right-menu a:hover {
       background-color: #004466;
       transform: scale(1.05);
+    }
+
+    .menu-divisor {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 0.5rem 0;
     }
 
     .modulo {
@@ -128,6 +151,27 @@
       background-color: #ddd;
       font-size: 0.8rem;
     }
+
+    @media (max-width: 600px) {
+      .logo {
+        max-height: 30px;
+      }
+
+      header h1 {
+        font-size: 1.2rem;
+      }
+
+      .floating-menu a,
+      .right-menu a {
+        font-size: 12px;
+        padding: 0.3rem 0.5rem;
+      }
+
+      .modulo {
+        padding: 1rem;
+        margin: 0.4rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -142,17 +186,22 @@
     <a href="https://drive.google.com/drive/folders/10w08DK-4jrLi7LEFJ7AnRU-323r84M6d?usp=sharing" target="_blank">📚 Índice</a>
     <a href="#modulo1">🧰 Módulo 1</a>
     <a href="#modulo2">🪚 Módulo 2</a>
+    <hr class="menu-divisor">
     <a href="#modulo3">📐 Módulo 3</a>
     <a href="#modulo4">🚪 Módulo 4</a>
+    <hr class="menu-divisor">
     <a href="#modulo5">🪟 Módulo 5</a>
     <a href="#modulo6">🧴 Módulo 6</a>
+    <hr class="menu-divisor">
     <a href="#modulo7">🔧 Módulo 7</a>
     <a href="#modulo8">🎓 Módulo 8</a>
+    <hr class="menu-divisor">
     <a href="#acerca">ℹ️ Nosotros</a>
     <a href="#contacto">📞 Contacto</a>
   </div>
 
   <div class="right-menu">
+    <h4>Recursos</h4>
     <a href="https://www.youtube.com/watch?v=oTngZviYXaU" target="_blank">🎬 Presentación</a>
     <a href="https://drive.google.com/drive/folders/1ZkRVmLe19DCprnZ7P7LSBx8IZNVSavOo?usp=sharing" target="_blank">🗂️ Software y Catálogos</a>
     <a href="http://689f9297c8e90.site123.me" target="_blank">🖼️ Presentación y galería</a>
@@ -176,7 +225,8 @@
 
   <section id="modulo4" class="modulo">
     <h3>🚪 Módulo 4</h3>
-    <a href="https://www.youtube.com/playlist?list=PLSDdbML_8oVmLvtkL5XhQZT-UrfGGkv03" target="_blank">Ver módulo</a>
+    <a href="https://www.youtube.com/playlist?list=PLSD
+UrfGGkv03" target="_blank">Ver módulo</a>
   </section>
 
   <section id="modulo5" class="modulo">
